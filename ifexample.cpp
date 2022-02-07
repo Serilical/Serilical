@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int score;
+  std::cout << "Enter Score: ";
+  std::cin >> score;
+  if(score >= 0) {
+    std::cout << "The Student Passed" << std::endl;
+    if(score>=90) {
+      std::cout << "A" << std::endl;
+    }
+    else if(score>80 && score<90) {
+      std::cout << "B" << std::endl;
+    }
+    else if(score >= 70 && score <80) {
+      std::cout <<"C" << std::endl;
+    }
+    else if(score >= 60 && score <70) {
+      std::cout <<"D" << std::endl;
+    }
+    else{
+      std::cout <<"F" << std::endl;
+    }
+  }
+  else {
+    std::cout << "invalid input" << std::endl;
+  }
+}
